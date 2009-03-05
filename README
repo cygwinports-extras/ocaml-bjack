@@ -1,0 +1,66 @@
+ocaml-bjack
+------------------------------------------
+This package contains an OCaml blocking API for the JACK Audio 
+Connection Kit.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libjack0-0.116.2-1
+  libsamplerate0-0.1.7-1
+  ocaml-3.10.2-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gcc-core-3.4.4-3
+  make-3.81-2
+  ocaml-findlib-1.2.2-1
+
+Canonical website:
+  http://savonet.sourceforge.net/wiki/OCamlLibs
+
+Canonical download:
+  http://downloads.sourceforge.net/savonet/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ocaml-bjack-0.1.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ocaml-bjack-0.1.2-X.cygport all
+
+This will create:
+  /usr/src/ocaml-bjack-0.1.2-X-src.tar.bz2
+  /usr/src/ocaml-bjack-0.1.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ocaml/3.10/bjack/META
+  /usr/lib/ocaml/3.10/bjack/libbjack_stubs.a
+  /usr/lib/ocaml/3.10/bjack/bjack.a
+  /usr/lib/ocaml/3.10/bjack/bjack.cma
+  /usr/lib/ocaml/3.10/bjack/bjack.cmi
+  /usr/lib/ocaml/3.10/bjack/bjack.cmx
+  /usr/lib/ocaml/3.10/bjack/bjack.cmxa
+  /usr/lib/ocaml/3.10/bjack/bjack.mli
+  /usr/lib/ocaml/3.10/stublibs/dllbjack_stubs.so
+  /usr/lib/ocaml/3.10/stublibs/dllbjack_stubs.so.owner
+  /usr/share/doc/ocaml-bjack-0.1.2/COPYING
+  /usr/share/doc/ocaml-bjack-0.1.2/Changes
+  /usr/share/doc/ocaml-bjack-0.1.2/README
+
+------------------
+
+Port Notes:
+
+----- version 0.1.2-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
